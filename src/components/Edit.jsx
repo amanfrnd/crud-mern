@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React,{useState} from 'react'
 
-const Register = () => {
+const Edit = () => {
     const [inpVal, setInpVal] = useState({
         name: '',
         email: '',
@@ -11,15 +11,15 @@ const Register = () => {
         description: ''
     })
 
-    const handleInput=(e)=>{
-        const {name,value}=e.target
+    const handleInput = (e) => {
+        const { name, value } = e.target
         setInpVal({
             ...inpVal,
-            [name]:value
+            [name]: value
         })
     }
 
-    const handleSubmit=(e)=>{
+    const handleSubmit = (e) => {
         e.preventDefault()
         console.log(inpVal)
     }
@@ -109,12 +109,11 @@ const Register = () => {
                     </div>
                 </div>
                 <div className='d-flex justify-content-center align-items-center mt-2'>
-                    <button type="submit" className="btn btn-primary text-center">Submit</button>
+                    <button type="submit" className="btn btn-primary text-center">Update</button>
                 </div>
-
             </form>
         </div>
     )
 }
 
-export default Register
+export default Edit
