@@ -5,6 +5,7 @@ import Home from './components/Home';
 import { Routes, Route } from 'react-router-dom';
 import Register from './components/Register';
 import Edit from './components/Edit';
+import Detail from './components/Detail';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Route exact path='/' element={<Home />} />
         <Route path='/register' element={<Register />} />
         <Route path='/edit/:id' element={<Edit />} />
+        <Route path='/view/:id' element={<Detail />} />
       </Routes>
     </>
   )

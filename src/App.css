@@ -4,3 +4,11 @@
 .container{
     overflow:auto;
 }
+.card-heading{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon-btn button{
+    margin:0px 5px;
+}
