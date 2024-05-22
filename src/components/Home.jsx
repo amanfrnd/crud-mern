@@ -1,11 +1,12 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Home = () => {
     return (
         <div className='mt-5'>
             <div className='container'>
                 <div className='add-btn mb-2'>
-                    <button className='btn btn-primary'>ADD DATA</button>
+                    <NavLink to='/register'><button className='btn btn-primary'>ADD DATA</button></NavLink>
                 </div>
                 <table className="table">
                     <thead>
